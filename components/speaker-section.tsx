@@ -109,6 +109,7 @@ export default function SpeakerSection({ speaker }: Props) {
               <a
                 aria-label="Facebook"
                 href={speaker.facebook}
+                className={styles.githubIcon}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -124,6 +125,7 @@ export default function SpeakerSection({ speaker }: Props) {
               <a
                 aria-label="Facebook"
                 href={speaker.instagram}
+                className={styles.githubIcon}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -135,6 +137,7 @@ export default function SpeakerSection({ speaker }: Props) {
               <a
                 aria-label="Facebook"
                 href={speaker.amazon}
+                className={styles.githubIcon}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -146,6 +149,7 @@ export default function SpeakerSection({ speaker }: Props) {
               <a
                 aria-label="Facebook"
                 href={speaker.linkedin}
+                className={styles.githubIcon}
                 target="_blank"
                 rel="noopener noreferrer"
               >

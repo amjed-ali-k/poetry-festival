@@ -18,6 +18,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import cn from 'classnames';
 import GithubIcon from '@components/icons/icon-github';
+import { BsFacebook } from 'react-icons/bs';
 
 import { Speaker } from '@lib/types';
 import styles from './speaker-section.module.css';
@@ -119,11 +120,12 @@ export default function SpeakerSection({ speaker }: Props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FacebookIcon />
+              <BsFacebook  color="#D8D8D8" size={24} />
+            
               </a>
             ) : (
               <span className={cn(styles.disabled)}>
-                <FacebookIcon />
+                <BsFacebook  color="#D8D8D8" size={24} />
               </span>
             )}
           </div>

@@ -15,7 +15,6 @@
  */
 
 import styles from './view-source.module.css';
-import { REPO } from '@lib/constants';
 
 export default function ViewSource() {
   return (
@@ -27,7 +26,7 @@ export default function ViewSource() {
       fill="#151513"
       className={styles.svg}
     >
-      <a title="View Source" href={REPO} target="_blank" rel="noopener noreferrer">
+      <a title="View Source" target="_blank" rel="noopener noreferrer">
         <path d="M0 0l115 115h15l12 27 108 108V0z" fill="#fff" />
         <path
           className={styles.arm}

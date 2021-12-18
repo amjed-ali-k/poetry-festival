@@ -19,7 +19,7 @@ import { scrollTo } from '@lib/smooth-scroll';
 import cn from 'classnames';
 import GithubIcon from '@components/icons/icon-github';
 import CheckIcon from '@components/icons/icon-check';
-import { REPO, SITE_ORIGIN, TicketGenerationState } from '@lib/constants';
+import { SITE_ORIGIN, TicketGenerationState } from '@lib/constants';
 import isMobileOrTablet from '@lib/is-mobile-or-tablet';
 import useConfData from '@lib/hooks/use-conf-data';
 import LoadingDots from './loading-dots';
@@ -206,14 +206,7 @@ export default function Form({ defaultUsername = '', setTicketGenerationState }:
           ) : (
             <>
               GitHub OAuth app is required.{' '}
-              <a
-                href={`${REPO}#authentication`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={ticketFormStyles['learn-more']}
-              >
-                Learn more.
-              </a>
+  
             </>
           )}
         </p>

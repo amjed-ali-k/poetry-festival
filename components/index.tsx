@@ -20,6 +20,7 @@ import Layout from './layout';
 import ConfContainer from './conf-container';
 import Hero from './hero';
 import LearnMore from './learn-more';
+import Form from './form';
 
 type Props = {
   defaultUserData: UserData;
@@ -47,7 +48,7 @@ export default function Conf({
         <ConfContainer>
           <>
             <Hero />
-            {/* <Form /> */}
+            <Form />
             <LearnMore />
           </>
         </ConfContainer>

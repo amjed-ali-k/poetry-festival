@@ -29,6 +29,8 @@ export const SHORT_DATE = 'Dec 19 - 5:30pm IST';
 export const FULL_DATE = 'Dec 19th 5:30pm Indian Standard Time (GMT+5:30)';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
+export const CREATOR = "Amjed Ali K"
+export const CREATOR_LINK = "https://github.com/amjed-ali-k"
 
 // Remove process.env.NEXT_PUBLIC_... below and replace them with
 // strings containing your own privacy policy URL and copyright holder name

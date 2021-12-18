@@ -105,7 +105,7 @@ export default function SpeakerSection({ speaker }: Props) {
             )}
             {speaker.facebook ? (
               <a
-                aria-label="GitHub"
+                aria-label="Facebook"
                 href={speaker.facebook}
                 target="_blank"
                 rel="noopener noreferrer"

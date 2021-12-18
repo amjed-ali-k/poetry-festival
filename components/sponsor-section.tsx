@@ -95,13 +95,13 @@ export default function SponsorSection({ sponsor }: Props) {
             <h2 className={styles.heading}>Resources</h2>
             {sponsor.links.map(link => (
               <a
-                key={link.url}
-                href={link.url}
+                key={link?.url}
+                href={link?.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(styles.button, styles['button-resource'])}
               >
-                <span className={styles.truncate}>{link.text}</span>
+                <span className={styles.truncate}>{link?.text}</span>
                 <svg
                   viewBox="0 0 24 24"
                   width="16"

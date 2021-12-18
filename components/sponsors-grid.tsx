@@ -32,9 +32,9 @@ function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
         })}
       >
         <div className={styles.imageWrapper}>
-          <Image
+         {sponsor.cardImage && <Image
             alt={sponsor.name}
-            src={sponsor.cardImage.url}
+            src={sponsor.cardImage?.url}
             className={cn(styles.image, {
               [styles.silver]: sponsor.tier === 'silver'
             })}
@@ -42,7 +42,7 @@ function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
             title={sponsor.name}
             width={900}
             height={500}
-          />
+          />}
         </div>
         {sponsor.tier !== 'silver' && (
           <div className={styles.cardBody}>

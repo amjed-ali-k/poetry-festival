@@ -18,7 +18,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import cn from 'classnames';
 import GithubIcon from '@components/icons/icon-github';
-import { BsFacebook } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
+import { AiFillAmazonCircle} from 'react-icons/ai';
+
 
 import { Speaker } from '@lib/types';
 import styles from './speaker-section.module.css';
@@ -118,6 +120,39 @@ export default function SpeakerSection({ speaker }: Props) {
                 <BsFacebook  color="#D8D8D8" size={24} />
               </span>
             )}
+                {speaker.instagram ? (
+              <a
+                aria-label="Facebook"
+                href={speaker.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <BsInstagram  color="#D8D8D8" size={24} />
+            
+              </a>
+            ) : null}
+               {speaker.amazon ? (
+              <a
+                aria-label="Facebook"
+                href={speaker.amazon}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <AiFillAmazonCircle  color="#D8D8D8" size={24} />
+            
+              </a>
+            ) : null}
+              {speaker.linkedin ? (
+              <a
+                aria-label="Facebook"
+                href={speaker.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <BsLinkedin  color="#D8D8D8" size={24} />
+            
+              </a>
+            ) : null}
           </div>
         </div>
       </div>

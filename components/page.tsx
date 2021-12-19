@@ -35,7 +35,6 @@ type Props = {
 
 export default function Page({ meta, children, fullViewport = false }: Props) {
   const router = useRouter();
-  const image = meta.image || '/twitter-card.png';
   const title = meta.title || SITE_NAME;
   const url = meta.url || `${SITE_URL}${router.asPath}`;
   const description = meta.description || SITE_NAME;
@@ -49,7 +48,7 @@ export default function Page({ meta, children, fullViewport = false }: Props) {
         <meta name="description" content={description} />
         <meta property="og:description" content={description} />
         <meta name="twitter:site" content={`@${TWITTER_USER_NAME}`} />
-        <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+        <meta name="twitter:card" content="https://rhyming-nature.gptcperinthalmanna.in/cover.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -62,12 +61,12 @@ export default function Page({ meta, children, fullViewport = false }: Props) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        {image && (
+     
           <meta
             property="og:image"
-            content={image.startsWith('https://') ? image : `${SITE_URL}${image}`}
+            content="https://rhyming-nature.gptcperinthalmanna.in/cover.png"
           />
-        )}
+        
       </Head>
       {children}
     </div>

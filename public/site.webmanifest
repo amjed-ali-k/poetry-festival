@@ -1,7 +1,7 @@
 {
-  "name": "Virtual Event Starter Kit",
-  "short_name": "Virtual Event Starter Kit",
-  "description": "Virtual Event Starter Kit -> https://demo.vercel.events",
+  "name": "Rhyming Nature - International Poetry Festival",
+  "short_name": "Rhyming Nature",
+  "description": "Rhyming nature international poetry festival event is conducted by Govt Polytechnic college Perinthalmnna and National Digital Library of India Club",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#fff",

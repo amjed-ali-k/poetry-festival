@@ -46,9 +46,10 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
               <Link href="/">
                 {/* eslint-disable-next-line */}
                 <a className={styles.logo}>
-                  <Logo />
+                  <Logo /> 
                 </a>
               </Link>
+              <p style={{marginLeft: "5px"}}>{" "}GPC Perinthalmanna</p>
             </div>
             <div className={styles.tabs}>
               {NAVIGATION.map(({ name, route }) => (

@@ -49,7 +49,7 @@
   flex-direction: column;
   align-items: initial;
   margin: var(--space-4x);
-  height: 215px;
+  /* height: 215px; */
 }
 
 .stageName {

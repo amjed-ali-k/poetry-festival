@@ -30,10 +30,10 @@ export default function Hero() {
           styles.description
         )}
       >
-         International Poetry Festival
+        International Poetry Festival
       </h2>
       <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
-        Rhyming Nature
+        Rhyming Nature -
         <br className={styleUtils['show-on-desktop']} /> International Poetry Festival
       </h1>
       <h2
@@ -44,7 +44,7 @@ export default function Hero() {
           styles.description
         )}
       >
-         International Poetry Festival
+        International Poetry Festival 2021
       </h2>
       <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
         <p>{DATE}</p>

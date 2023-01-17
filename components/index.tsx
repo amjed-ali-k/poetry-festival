@@ -30,11 +30,11 @@ type Props = {
 
 export default function Conf({
   defaultUserData,
-  sharePage,
+
   defaultPageState = 'registration'
 }: Props) {
   const [userData, setUserData] = useState<UserData>(defaultUserData);
-  const [pageState, setPageState] = useState<PageState>(defaultPageState);
+  const [, setPageState] = useState<PageState>(defaultPageState);
 
   return (
     <ConfDataContext.Provider

@@ -17,11 +17,9 @@
 import useSWR from 'swr';
 import cn from 'classnames';
 import { Stage } from '@lib/types';
-import useLoginStatus from '@lib/hooks/use-login-status';
 import styles from './stage-container.module.css';
 import styleUtils from './utils.module.css';
 import ScheduleSidebar from './schedule-sidebar';
-import ConfEntry from './conf-entry';
 
 type Props = {
   stage: Stage;
@@ -36,26 +34,24 @@ export default function StageContainer({ stage, allStages }: Props) {
 
   const updatedStages = response.data || [];
   const updatedStage = updatedStages.find((s: Stage) => s.slug === stage.slug) || stage;
-  const { loginStatus, mutate } = useLoginStatus();
 
   return (
     <div className={styles.container}>
       <div className={styles.streamContainer}>
-       
-          <div className={cn(styles.stream, styleUtils.appear, styleUtils['appear-first'])}>
-            <iframe
-              allow="autoplay; picture-in-picture"
-              allowFullScreen
-              frameBorder="0"
-              src={`${updatedStage.stream}?autoplay=1&mute=1`}
-              title={updatedStage.name}
-              width="100%"
-            />
-            <div className={cn(styles.bottom, styleUtils.appear, styleUtils['appear-second'])}>
-              <div className={styles.messageContainer}>
-                <h2 className={styles.stageName}>{stage.name}</h2>
-              </div>
-              {/* <a
+        <div className={cn(styles.stream, styleUtils.appear, styleUtils['appear-first'])}>
+          <iframe
+            allow="autoplay; picture-in-picture"
+            allowFullScreen
+            frameBorder="0"
+            src={`${updatedStage.stream}?autoplay=1&mute=1`}
+            title={updatedStage.name}
+            width="100%"
+          />
+          <div className={cn(styles.bottom, styleUtils.appear, styleUtils['appear-second'])}>
+            <div className={styles.messageContainer}>
+              <h2 className={styles.stageName}>{stage.name}</h2>
+            </div>
+            {/* <a
                 href={updatedStage.discord}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -78,9 +74,8 @@ export default function StageContainer({ stage, allStages }: Props) {
                   />
                 </svg>
               </a> */}
-            </div>
           </div>
-       
+        </div>
       </div>
       <ScheduleSidebar allStages={updatedStages} />
     </div>

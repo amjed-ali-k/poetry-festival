@@ -16,7 +16,13 @@
 
 import cn from 'classnames';
 import styles from './footer.module.css';
-import { COPYRIGHT_HOLDER, SITE_NAME, CODE_OF_CONDUCT, LEGAL_URL, CREATOR, CREATOR_LINK } from '@lib/constants';
+import {
+  COPYRIGHT_HOLDER,
+  SITE_NAME,
+  CODE_OF_CONDUCT,
+  CREATOR,
+  CREATOR_LINK
+} from '@lib/constants';
 
 export function HostedByVercel() {
   return (

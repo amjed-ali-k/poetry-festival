@@ -18,9 +18,7 @@ import styles from './ticket-info.module.css';
 import styleUtils from './utils.module.css';
 import Logo from './logo';
 import { DATE, SITE_URL } from '@lib/constants';
-import VercelLogo from '@components/icons/icon-platform';
 import Image from 'next/image';
-
 
 const siteUrl = new URL(SITE_URL);
 const siteUrlForTicket = `${siteUrl.host}${siteUrl.pathname}`.replace(/\/$/, '');
@@ -30,7 +28,7 @@ export default function TicketInfo({ logoTextSecondaryColor = 'var(--accents-5)'
     <div className={styles['created-by']}>
       <div className={styles['created-by-text']}>Event by </div>
       <div className={styles['created-by-logo']}>
-        <Image src="logo.png" alt='logo' height={50} width={50} />
+        <Image src="logo.png" alt="logo" height={50} width={50} />
         {/* <VercelLogo height="100%" color="var(--accents-4)" /> */}
       </div>
     </div>

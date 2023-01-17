@@ -19,7 +19,6 @@ import Image from 'next/image';
 import cn from 'classnames';
 import { Sponsor } from '@lib/types';
 import styles from './sponsor-section.module.css';
-import styleUtils from './utils.module.css';
 
 type Props = {
   sponsor: Sponsor;

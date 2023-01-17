@@ -102,7 +102,7 @@ export default function Ticket({ username, name, ticketNumber, sharePage }: Prop
               setTicketGenerationState={setTicketGenerationState}
             />
           ) : (
-            <Form sharePage />
+            <Form />
           )}
         </div>
       </div>

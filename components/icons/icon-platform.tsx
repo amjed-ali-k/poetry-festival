@@ -14,12 +14,10 @@
  * limitations under the License.
  */
 
-import Image from "next/image";
+import Image from 'next/image';
 
 type Props = { color: string; height?: number | string };
 
-export default function PlatformLogo({ color, height = 20 }: Props) {
-  return (
-   <Image src="/logo.png" height={height} width={height} />
-  );
+export default function PlatformLogo({ height = 20 }: Props) {
+  return <Image src="/logo.png" height={height} width={height} />;
 }

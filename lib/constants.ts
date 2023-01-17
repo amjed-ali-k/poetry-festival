@@ -24,18 +24,18 @@ export const META_DESCRIPTION =
   'Rhyming nature international poetry festival event is conducted by Govt Polytechnic college Perinthalmnna and National Digital Library of India Club';
 export const SITE_DESCRIPTION =
   'An interactive online experience by the GPC Perinthalmanna, free for everyone.';
-export const DATE = 'December 19, 2021';
-export const SHORT_DATE = 'Dec 19 - 5:30pm IST';
-export const FULL_DATE = 'Dec 19th 5:30pm Indian Standard Time (GMT+5:30)';
+export const DATE = 'January 29, 2023';
+export const SHORT_DATE = 'Jan 29 - 5:30pm IST';
+export const FULL_DATE = 'Jan 29th 5:00pm Indian Standard Time (GMT+5:30)';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
-export const CREATOR = "Amjed Ali K"
-export const CREATOR_LINK = "https://github.com/amjed-ali-k"
+export const CREATOR = 'Amjed Ali K';
+export const CREATOR_LINK = 'https://github.com/amjed-ali-k';
 
 // Remove process.env.NEXT_PUBLIC_... below and replace them with
 // strings containing your own privacy policy URL and copyright holder name
 export const LEGAL_URL = process.env.NEXT_PUBLIC_PRIVACY_POLICY_URL;
-export const COPYRIGHT_HOLDER = "Govt Polytechnic College, Perinthalmanna";
+export const COPYRIGHT_HOLDER = 'Govt Polytechnic College, Perinthalmanna';
 
 export const CODE_OF_CONDUCT =
   'https://www.notion.so/vercel/Code-of-Conduct-Example-7ddd8d0e9c354bb597a0faed87310a78';
